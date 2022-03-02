@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 'The Quick Brown Fox';
+    let a =  prompt('Nhập Câu Bạn Thích ')
+    let b = a.split('');
+    console.log(b);
+    for (i=0; i<b.length; i++){
+        if(b[i]===b[i].toUpperCase()){
+            b[i]=b[i].toLowerCase();
+            console.log('Check ==== '+ b);
+        }else {
+            b[i]=b[i].toUpperCase();
+        }
+    }document.write(b.join(''));
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = '025468';
+    b = a.split('');
+    console.log(b);
+    let i;
+
+    for (i=0;i<b.length;i++){
+        if(b[i]%2==0&&b[i+1]%2==0){
+            b.splice(i+1,0,'-');
+            // document.write('-'+b[i])
+            console.log(b)
+        }
+    }document.write(b.join(''));
+
+</script>
+</body>
+</html>
